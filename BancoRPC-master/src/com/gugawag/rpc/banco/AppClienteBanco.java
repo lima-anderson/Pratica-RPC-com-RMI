@@ -14,9 +14,7 @@ public class AppClienteBanco {
         // procura o serviço no RMI Registry local. Perceba que o cliente não connhece a implementação do servidor,
         // apenas a interface
         Registry registry = LocateRegistry.getRegistry();
-//        Registry registry = LocateRegistry.getRegistry("10.0.1.4", 1099);
         BancoServiceIF banco = (BancoServiceIF) registry.lookup("BancoService");
-
 
         menu();
         Scanner entrada = new Scanner(System.in);
@@ -67,6 +65,7 @@ public class AppClienteBanco {
     }
 
     public static void menu() {
+        System.out.println("\n=== Anderson Lima ===");
         System.out.println("\n=== BANCO RMI (ou FMI?!) ===");
         System.out.println("1 - Saldo da conta");
         System.out.println("2 - Quantidade de contas");

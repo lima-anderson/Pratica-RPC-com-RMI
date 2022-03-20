@@ -2,6 +2,7 @@ package com.gugawag.rpc.banco;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.List;
 
 public interface BancoServiceIF extends Remote {
 
@@ -10,6 +11,4 @@ public interface BancoServiceIF extends Remote {
     int quantidadeContas() throws RemoteException;
     Boolean removerConta(String numero) throws RemoteException;
     Boolean cadastrarConta(Conta conta) throws RemoteException;
-
-
 }

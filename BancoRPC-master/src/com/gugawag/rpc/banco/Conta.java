@@ -1,6 +1,8 @@
 package com.gugawag.rpc.banco;
 
-public class Conta{
+import java.io.Serializable;
+
+public class Conta  implements Serializable {
     private String numero;
     private double saldo;
 
